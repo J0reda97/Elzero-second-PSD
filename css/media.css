@@ -1,0 +1,241 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .container {
+        width: 95%;
+    }
+
+    header .content h2 {
+        font-size: 20px;
+    }
+
+    header .content p {
+        font-size: 12px;
+    }
+
+    section {
+        padding: 50px 0;
+    }
+
+    .main-heading+p {
+        width: 100%;
+    }
+
+    #services .service-container .service p {
+        font-size: 14px;
+        width: 90%;
+        margin: auto;
+    }
+
+    #services .service-container .service h3 {
+        font-size: 20px
+    }
+
+    /* Design */
+
+    .design .text h3 {
+        font-size: 20px;
+    }
+
+    .design img {
+        width: 75%;
+    }
+
+    /* Portfolio */
+    #portfolio .shuffle {
+        width: 300px;
+        font-size: 14px;
+    }
+
+    #portfolio .img-container .img {
+        margin: auto;
+        width: 300px;
+    }
+
+    /* video */
+
+    .video .text {
+        padding: 25px;
+    }
+
+    .video .text h3 {
+        font-size: 20px;
+    }
+
+    .video .text p {
+        font-size: 16px;
+    }
+
+    .video .text a {
+        font-size: 14px;
+    }
+
+    /* about  */
+
+    #about .img {
+        margin-top: -100px;
+    }
+
+    #about img {
+        bottom: -100px;
+    }
+
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .container {
+        width: 95%;
+    }
+
+    #portfolio .img-container .img {
+        flex-basis: 50%;
+    }
+
+    /* about  */
+
+    #about .img {
+        margin-top: -150px;
+    }
+
+    #about img {
+        bottom: -200px;
+    }
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    /* about */
+
+    #about .img {
+        margin-top: -200px;
+    }
+
+    #about img {
+        bottom: -250px;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    header nav .links ul {
+        display: none;
+    }
+
+    header nav .links i.menu {
+        display: block;
+    }
+
+    header .text,
+    header .content {
+        width: 100%;
+        text-align: center;
+    }
+
+    header .left,
+    header .right {
+        display: none;
+    }
+
+    header nav .links .menu-items {
+        width: fit-content;
+        position: relative;
+    }
+
+    header nav .links .menu-items i {
+        padding: 0;
+        margin: 0;
+    }
+
+    header nav .links .menu-items:hover ul {
+        display: flex;
+        position: absolute;
+        flex-direction: column;
+        right: 0;
+        top: 25px;
+        background-color: rgba(0, 0, 0, 0.65);
+        z-index: 2;
+        width: 100px;
+    }
+
+    header nav .links .menu-items a {
+        padding: 10px;
+    }
+
+    #services .service-container {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+
+    #services .service-container .service {
+        text-align: center;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    #services .service-container .service .text {
+        padding-left: 0;
+    }
+
+    #services .service-container .service i {
+        padding-bottom: 50px;
+        font-size: 40px;
+    }
+
+    /* Design */
+
+    .design {
+        flex-direction: column;
+    }
+
+    .design .text {
+        order: -1;
+        transform: translateY(35%);
+    }
+
+
+    /* stats  */
+
+    .stats .stat-container .stat {
+        flex-basis: 50%;
+    }
+}
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .container {
+        width: 85%;
+    }
+
+    /* about */
+
+    #about .img {
+        margin-top: -250px;
+    }
+
+    #about img {
+        bottom: -300px;
+    }
+
+    /* stats  */
+
+    .stats .stat-container .stat {
+        flex-basis: 25%;
+    }
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .container {
+        width: 85%;
+    }
+
+    #portfolio .img-container .img {
+        flex-basis: 25%;
+    }
+}
